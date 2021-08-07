@@ -9,8 +9,11 @@
     </head>
 
     <body>
+        <!-- En-tête -->
         <header>
+            <!-- Titre principal -->
             <h1 id="main_title">Reservia</h1>
+            <!-- Liens de navigations sur la page -->
             <nav>
                 <ul id="signin">
                     <li><a href="#">S'inscrire</a></li>
@@ -22,6 +25,7 @@
             </nav>
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <h3>En plein centre ville ou en pleine nature</h3>
+            <!-- Formulaire de recherche -->
             <form action="" method="post" id="search_city">
                 <p>
                     <img src="" alt="X"/>
@@ -30,6 +34,7 @@
                 </p>
             </form>
             <h2>Filtres</h2>
+            <!-- Liens de navigations vers les filtres -->
             <nav>
                 <ul id="filter_list">
                     <li><a href="#">Économique</a></li>
@@ -44,33 +49,109 @@
             </p>
         </header>
 
+        <!-- Parties principales de la page -->
         <main>
+            <!-- Section hébergements populaires -->
             <section id="pop">
                 <div id="pop_title">
-                    <h2>Les plus populaires</h2>
+                    <h2 class="section_title">Les plus populaires</h2>
                     <img src="" alt="->">
                 </div>
                 <div id="pop_cards">
-                    <div class="pop_card">
-                        <img src="" alt="Photo">
-                        <h3 class="cards_title">Hôtel Le soleil du matin</h3>
-                        <p class="cards_desc">Nuit à partir de 128€</p>
-                        <div class="stars">*****</div>
-                    </div>
-                    <div class="pop_card">
-                        <img src="" alt="Photo">
-                        <h3 class="cards_title">Au cœur de l'eau Chambres d'hôtes</h3>
-                        <p class="cards_desc">Nuit à partir de 71€</p>
-                        <div class="stars">****</div>
-                    </div>
-                    <div class="pop_card">
-                        <img src="" alt="Photo">
-                        <h3 class="cards_title">Hôtel Tout bleu et Blanc</h3>
-                        <p class="cards_desc">Nuit à partir de 68€</p>
-                        <div class="stars">****</div>
-                    </div>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="pop_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Hôtel Le soleil du matin</h3>
+                            <p class="cards_desc">Nuit à partir de 128€</p>
+                            <div class="stars">*****</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="pop_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Au cœur de l'eau Chambres d'hôtes</h3>
+                            <p class="cards_desc">Nuit à partir de 71€</p>
+                            <div class="stars">****</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="pop_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Hôtel Tout bleu et Blanc</h3>
+                            <p class="cards_desc">Nuit à partir de 68€</p>
+                            <div class="stars">****</div>
+                        </div>
+                    </a>
                 </div>
             </section>
+            <!-- Section hébergements par ville -->
+            <section id="hbgmt">
+                <h2 class="section_title">Hébergements à Marseille</h2>
+                <div id="hbgmt_cards">
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="hbgmt_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Auberge la Cannebière</h3>
+                            <p class="cards_desc">Nuit à partir de 25€</p>
+                            <div class="stars">****</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="hbgmt_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Hôtel du port</h3>
+                            <p class="cards_desc">Nuit à partir de 52€</p>
+                            <div class="stars">****</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="hbgmt_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Hôtel Les mouettes</h3>
+                            <p class="cards_desc">Nuit à partir de 76€</p>
+                            <div class="stars">****</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="hbgmt_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Hôtel de la mer</h3>
+                            <p class="cards_desc">Nuit à partir de 46€</p>
+                            <div class="stars">***</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="hbgmt_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Auberge Le Panier</h3>
+                            <p class="cards_desc">Nuit à partir de 23€</p>
+                            <div class="stars">****</div>
+                        </div>
+                    </a>
+                    <!-- Carte/Lien vers un hébergement -->
+                    <a href="#" class="card_link">
+                        <div class="hbgmt_card">
+                            <img src="" alt="Photo">
+                            <h3 class="cards_title">Hôtel chez Amina</h3>
+                            <p class="cards_desc">Nuit à partir de 96€</p>
+                            <div class="stars">*****</div>
+                        </div>
+                    </a>
+                </div>
+                <p>
+                    <a href="#">Afficher plus</a>
+                </p>
+            </section>
+            <!-- Section activité par ville -->
+            <section id="actv"></section>
         </main>
 
         <footer>
