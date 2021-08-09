@@ -1,0 +1,15 @@
+/* Import des polices de caractère */
+@font-face {
+    font-family: "raleway";
+    src: url("fonts/Raleway-Italic-VariableFont_wght.ttf") format("ttf"),
+         url("fonts/Raleway-VariableFont_wght.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "rancho";
+    src: url(fonts/Rancho-Regular.ttf) format("ttf");
+    font-weight: normal;
+    font-size: normal;
+}
