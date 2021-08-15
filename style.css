@@ -6,12 +6,12 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'rancho';
     src: url('fonts/Rancho-Regular.ttf') format('truetype');
     font-weight: normal;
     font-size: normal;
-}
+} */
 
 /* Règles générales */
 body {
@@ -19,28 +19,49 @@ body {
     font-size: 18px;
     width: 100vw;
     margin: auto;
+    background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4vw;
+    /* position: relative; */
 }
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
 
 /* Header */
 header {
-    width: 100%;
+    /* min-width: 100vw; */
     height: 100vh;
     position: relative;
+    /* ? */
+    /* border: 1px solid black; */
 }
 
 /* Lien d'inscription en position absolu */
 #signin {
     position: absolute;
-    top : 0px;
-    right: 20px;
+    /* ? */
+    top : -55px;
+    right: 5vw;
 }
 
 /* Titre Reservia */
-#main_title {
+/* #titre_page {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+} */
+/* #main_title {
     font-family: 'rancho', sans-serif;
     font-weight: lighter;
-    margin: 20px 0 10px 20px;
+    margin: 5vh 0 5vw 5vh;
     color: #0065FC;
+} */
+
+nav {
+    /* border: green 1px solid; */
+    margin-top: 60px;
 }
 
 #nav_links {
@@ -53,7 +74,8 @@ header {
     /* border: blue 1px solid; */
 }
 
-#signin li, #nav_links li{
+/* Enlevage des points de toutes les listes */
+li {
     list-style-type: none;
 }
 
@@ -68,7 +90,7 @@ header {
 #nav_links a {
     text-decoration: none;
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 #nav_links li {
@@ -78,21 +100,21 @@ header {
     /* border: brown 1px solid; */
 }
 
-#hbgmt {
+#hbgmt_link {
     border-bottom: 2px solid #0065FC;
 }
 
-#actv {
+#actv_link {
     border-bottom: 2px solid #F2F2F2;
 }
 
-#hbgmt a{
+#hbgmt_link a{
     color: #0065FC;
     font-weight: 600;
     margin: auto;
 }
 
-#actv a {
+#actv_link a {
     color: black;
     font-weight: 500;
     margin: auto;
@@ -106,7 +128,7 @@ header {
 
 h2 {
     font-size: 1.15em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 #desc {
@@ -125,8 +147,9 @@ h2 {
 
 /* Formulaire */
 #form {
-    width: 80vw;
-    height: 40px;
+    width: fit-content;
+    margin: auto;
+    height: 5vh;
     display: flex;
     align-items: center;
     /* background-color: #F2F2F2; */
@@ -135,9 +158,10 @@ h2 {
     /* margin: auto; */
 }
 #map_mark{
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
+    width: 5vh;
+    min-width: 30px;
+    height: 5vh;
+    min-height: 30px;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     display: flex;
@@ -153,7 +177,7 @@ h2 {
 
 #search_city p{
     /* border: olive 2px solid; */
-    height: 40px;
+    height: 5vh;
     display: flex;
     align-items: center;
     /* justify-content: flex-end; */
@@ -162,7 +186,7 @@ h2 {
 #search_box {
     /* border: 2px blue solid; */
     padding: 0 0 0 10px;
-    height: 40px;
+    height: 5vh;
     /* width: 200px; */
     border: none;
     font-size: 0.8em;
@@ -174,9 +198,10 @@ h2 {
 }
 
 #sub_btn {
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
+    width: 5vh;
+    min-width: 30px;
+    height: 5vh;
+    min-height: 30px;
     background: #0065FC;
     border: none;
     padding: 0;
@@ -193,6 +218,60 @@ h2 {
 }
 
 /* Filtres */
+#filter_list {
+    /* min-height: 160px; */
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-between;
+    /* justify-content: space-evenly; */
+    padding: 0;
+    /* border: 2px red solid; */
+}
+
+.filter {
+    /* border: 1px solid black; */
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.filter a {
+    /* border: 2px green solid; */
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #9c9c9c;
+    border-width: 1.5px 1.5px 1.5px 0;
+    border-radius: 50px;
+}
+.img_conteneur {
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    width: 5vh;
+    min-width: 30px;
+    height: 5vh;
+    min-height: 30px;
+    margin-right: 15px;
+    background: #DEEBFF;
+    border-radius: 50%;
+}
+
+.img_conteneur img {
+    margin: auto;
+}
+
+.li_link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.filter_desc {
+    display: block;
+    margin-right: 20px;
+}
 
 /* Catégorie populaires */
 .card_link {
