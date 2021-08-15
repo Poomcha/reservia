@@ -274,93 +274,69 @@ h2 {
 }
 
 /* Catégorie populaires */
-.card_link {
-    display: block;
-    width: 94%;
-    height: 25vh;
-    margin: auto;
-}
-
 #pop {
     background-color: #F2F2F2;
 }
-
-#pop_cards .card_link:nth-child(1) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat left;
-    background-size: 50% 100%;
+/* Titre */
+#pop_title {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 
-#pop_cards .card_link:nth-child(2) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat left;
-    background-size: 50% 100%;
+#pop_title img {
+    width: 20px;
+    height: 20px;
 }
 
-#pop_cards .card_link:nth-child(3) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat left;
-    background-size: 50% 100%;
+/* Section populaire */
+#pop_cards {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-/* Categories hébergements */
-#hbgmt_cards .card_link:nth-child(1) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+/* Cartes */
+.card_link {
+    display: block;
+    width: 94%;
+    height: 20vh;
+    margin: auto;
+    /* border: red solid 1px; */
 }
 
-#hbgmt_cards .card_link:nth-child(2) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+.pop_card_ctn {
+    /* ? */
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.200);
+    /* border: greenyellow 2px solid; */
 }
 
-#hbgmt_cards .card_link:nth-child(3) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+.pop_img {
+    width: 50%;
+    max-width: 50%;
+    height: 90%;
+    margin: auto;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
 }
 
-#hbgmt_cards .card_link:nth-child(4) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-}
-
-#hbgmt_cards .card_link:nth-child(5) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-}
-
-#hbgmt_cards .card_link:nth-child(6) {
-    border: solid black 1px;
-    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-}
-
-/* Catégories activités */
-#actv_cards .card_link:nth-child(1) {
-    border: solid black 1px;
-    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-}
-
-#actv_cards .card_link:nth-child(2) {
-    border: solid black 1px;
-    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-}
-
-#actv_cards .card_link:nth-child(3) {
-    border: solid black 1px;
-    background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-}
-
-#actv_cards .card_link:nth-child(4) {
-    border: solid black 1px;
-    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-}
-
-#actv_cards .card_link:nth-child(5) {
-    border: solid black 1px;
-    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-}
-
-#actv_cards .card_link:nth-child(6) {
-    border: solid black 1px;
-    background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+.pop_card_desc {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    /* border: blue 2px solid; */
 }
