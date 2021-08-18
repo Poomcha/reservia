@@ -363,7 +363,7 @@ h2 {
 
 .hbgmt_card_ctn_in {
     width: 100%;
-    height: 60%;
+    height: 30vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -372,14 +372,14 @@ h2 {
 
 .hbgmt_desc_ctn {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     /* border: green solid 2px; */
 }
 
 .hbgmt_card_img {
     /* display: block; */
     width: 90vw;
-    height: 100%;
+    height: 20vh;
     border-radius: 4vw 4vw 0 0;
     object-fit: cover;
 }
@@ -399,7 +399,7 @@ h2 {
 
 .actv_card_ctn_in {
     width: 100%;
-    height: 80%;
+    height: 30vh
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -408,14 +408,14 @@ h2 {
 
 .actv_desc_ctn {
     width: 100%;
-    /* height: 10vh; */
+    height: 6vh;
     /* border: green solid 2px; */
 }
 
 .actv_card_img {
     /* display: block; */
     width: 90vw;
-    height: 100%;
+    height: 24vh;
     border-radius: 4vw 4vw 0 0;
     object-fit: cover;
 }
