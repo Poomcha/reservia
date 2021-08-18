@@ -148,6 +148,7 @@ h2 {
 /* Formulaire */
 #form {
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
     height: 5vh;
     display: flex;
@@ -221,6 +222,7 @@ h2 {
 #filter_list {
     /* min-height: 160px; */
     height: fit-content;
+    height: -moz-fit-content;
     display: flex;
     flex-flow: row wrap;
     align-items: space-between;
@@ -238,6 +240,7 @@ h2 {
 .filter a {
     /* border: 2px green solid; */
     width: fit-content;
+    width:-moz-fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
