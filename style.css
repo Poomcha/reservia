@@ -293,61 +293,56 @@ h2 {
 
 /* Section populaire */
 #pop_cards {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Cartes */
-.card_link {
-    display: block;
-    width: 94%;
+.pop_card_ctn_out {
+    width: 90vw;
     height: 20vh;
-    margin: auto;
-    /* border: red solid 1px; */
-}
-
-.pop_card_ctn {
-    /* ? */
+    /* margin: auto; */
+    box-shadow: black 2px 2px 10px;
+    border-radius: 4vw;
+    margin-bottom: 10px;
     display: flex;
-    position: relative;
-    width: 100%;
-    height: 20vh;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.200);
-    /* border: greenyellow 2px solid; */
+    align-items: center;
+    /* border: red 2px solid; */
 }
 
-.pop_img_ctn {
-    width: 50%;
-    height: 90%;
+.pop_card_ctn_in {
+    width: 98%;
+    height: 19vh;
     margin: auto;
-    margin-left: 5px;
-    border: red 2px solid;
+    display: flex;
+    /* border: solid blue 2px; */
 }
 
-.pop_img {
-    /* width: 50%; */
-    /* max-width: 50%;
-    height: 90%;
-    margin: auto;
-    margin-left: 5px; */
-    width: 100%;
-    max-height: 100%;
-    background-color: white;
-    border-radius: 20px 0 0 20px;
-    border: blue 2px solid;
+.pop_desc_ctn {
+    width: 60vw;
+    height: 19vh;
+    border: green solid 2px;
 }
 
-.pop_card_desc {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    width: 60%;
-    height: 100%;
-    border-radius: 0 20px 20px 0;
-    background-color: white;
-    /* border: blue 2px solid; */
+.pop_card_img {
+    display: block;
+    width: 30vw;
+    height: auto;
+    border-radius: 3vw 0 0 3vw;
+    object-fit: cover;
+}
+
+
+.cards_title {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.cards_desc {
+    font-size: 0.6em;
+    font-weight: 500;
+    margin: 0;
 }
