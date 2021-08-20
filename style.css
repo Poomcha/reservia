@@ -288,7 +288,6 @@ h2 {
 .pop_card_ctn_out {
     width: 90vw;
     height: 20vh;
-    /* margin: auto; */
     box-shadow: black 0px 1px 5px -2px;
     background: white;
     border-radius: 4vw;
@@ -309,7 +308,11 @@ h2 {
 .pop_desc_ctn {
     width: 60vw;
     height: 19vh;
-    /* border: green solid 2px; */
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    border: green solid 2px;
 }
 
 .pop_card_img {
@@ -323,14 +326,27 @@ h2 {
 
 .cards_title {
     font-size: 1.1em;
+    width: 70%;
+    border: blue 1px solid;
     margin: 0;
 }
 
 .cards_desc {
-    font-size: 0.6em;
+    font-size: 0.9em;
     font-weight: 500;
+    width: 70%;
+    border: blueviolet 1px solid;
     margin: 0;
 }
+
+.stars {
+    display: flex;
+    border: chartreuse 2px solid;
+}
+/* .star {
+    width: 15px;
+    height: 15px;
+} */
 
 /* Hébergements */
 .hbgmt_card_ctn_out {
