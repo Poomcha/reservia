@@ -6,13 +6,6 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'rancho';
-    src: url('fonts/Rancho-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-size: normal;
-} */
-
 /* Règles générales */
 body {
     font-family: 'raleway', monospace;
@@ -20,44 +13,21 @@ body {
     width: 100vw;
     margin: auto;
     background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4vw;
-    /* position: relative; */
 }
-
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
 
 /* Header */
 header {
-    /* min-width: 100vw; */
-    height: 100vh;
+    height: fit-content;
+    height: -moz-fit-content;
     position: relative;
-    /* ? */
-    /* border: 1px solid black; */
 }
 
 /* Lien d'inscription en position absolu */
 #signin {
     position: absolute;
-    /* ? */
     top : -55px;
     right: 5vw;
 }
-
-/* Titre Reservia */
-/* #titre_page {
-    position: absolute;
-    top: 0;
-    left: 5vw;
-} */
-/* #main_title {
-    font-family: 'rancho', sans-serif;
-    font-weight: lighter;
-    margin: 5vh 0 5vw 5vh;
-    color: #0065FC;
-} */
 
 nav {
     /* border: green 1px solid; */
@@ -68,10 +38,8 @@ nav {
     width: auto;
     height: 40px;
     display: flex;
-    /* ? */
     padding: 0;
     margin: 0;
-    /* border: blue 1px solid; */
 }
 
 /* Enlevage des points de toutes les listes */
@@ -97,7 +65,6 @@ li {
     width: 100%;
     height: 100%;
     display: flex;
-    /* border: brown 1px solid; */
 }
 
 #hbgmt_link {
@@ -121,7 +88,6 @@ li {
 }
 
 #corps_header {
-    /* border: 1px solid black; */
     width: 90%;
     margin: auto;
 }
@@ -129,11 +95,6 @@ li {
 h2 {
     font-size: 1.15em;
     font-weight: 800;
-}
-
-#desc {
-    /* border: 1px red solid; */
-    /* max-width: 300px; */
 }
 
 #desc h2 {
@@ -172,23 +133,15 @@ h2 {
     margin: auto;
 }
 
-#search_city {
-    /* flex: 1; */
-}
-
 #search_city p{
-    /* border: olive 2px solid; */
     height: 5vh;
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */
 }
 
 #search_box {
-    /* border: 2px blue solid; */
     padding: 0 0 0 10px;
     height: 5vh;
-    /* width: 200px; */
     border: none;
     font-size: 0.8em;
     font-weight: 600;
@@ -220,27 +173,24 @@ h2 {
 
 /* Filtres */
 #filter_list {
-    /* min-height: 160px; */
     height: fit-content;
     height: -moz-fit-content;
     display: flex;
     flex-flow: row wrap;
     align-items: space-between;
-    /* justify-content: space-evenly; */
     padding: 0;
-    /* border: 2px red solid; */
 }
 
 .filter {
-    /* border: 1px solid black; */
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
 .filter a {
-    /* border: 2px green solid; */
     width: fit-content;
     width:-moz-fit-content;
+    height: 4.6vh;
+    min-height: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,15 +198,15 @@ h2 {
     border-width: 1.5px 1.5px 1.5px 0;
     border-radius: 50px;
 }
+
 .img_conteneur {
-    /* border: solid 1px black; */
     display: flex;
     justify-content: center;
     width: 5vh;
     min-width: 30px;
     height: 5vh;
     min-height: 30px;
-    margin-right: 15px;
+    margin-right: 10px;
     background: #DEEBFF;
     border-radius: 50%;
 }
@@ -273,12 +223,40 @@ h2 {
 
 .filter_desc {
     display: block;
-    margin-right: 20px;
+    margin: auto 20px auto 0;
+}
+
+#info {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
+#info_img_ctn {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border: #9c9c9c 1px solid;
+    border-radius: 50%;
+    align-self: center;
+}
+
+#info_div {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#info_div p {
+    width: fit-content;
+    margin-bottom: 0;
+    margin-left: 5px;
 }
 
 /* Catégorie populaires */
 #pop {
     background-color: #F2F2F2;
+    height: 80vh;
+    border: #F2F2F2 1px solid;
 }
 /* Titre */
 #pop_title {
@@ -287,6 +265,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    margin-top: 20px;
 }
 
 #pop_title img {
@@ -296,7 +275,8 @@ h2 {
 
 /* Section populaire */
 #pop_cards {
-    height: 80vh;
+    height: fit-content;
+    height: -moz-fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,7 +289,8 @@ h2 {
     width: 90vw;
     height: 20vh;
     /* margin: auto; */
-    box-shadow: black 2px 2px 10px;
+    box-shadow: black 0px 1px 5px -2px;
+    background: white;
     border-radius: 4vw;
     margin-bottom: 10px;
     display: flex;
@@ -318,8 +299,8 @@ h2 {
 }
 
 .pop_card_ctn_in {
-    width: 98%;
-    height: 19vh;
+    width: 97%;
+    height: 18.5vh;
     margin: auto;
     display: flex;
     /* border: solid blue 2px; */
@@ -328,7 +309,7 @@ h2 {
 .pop_desc_ctn {
     width: 60vw;
     height: 19vh;
-    border: green solid 2px;
+    /* border: green solid 2px; */
 }
 
 .pop_card_img {
@@ -402,7 +383,7 @@ h2 {
 
 .actv_card_ctn_in {
     width: 100%;
-    height: 30vh
+    height: 30vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -421,4 +402,102 @@ h2 {
     height: 24vh;
     border-radius: 4vw 4vw 0 0;
     object-fit: cover;
+}
+
+/* Media queries pour pc */
+@media screen and (min-width: 1024px) {
+    /* Règles générales */
+    body {
+        width: 100%;
+        background: url('images/logo/Reservia@3x.png') no-repeat left 50px top 35px / 100px;
+    }
+    /* Header */
+    #signin {
+        position: static;
+        /* height: 40px; */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        border: green 1px solid;
+    }
+
+    #signin li {
+        margin: auto;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        border: red 2px solid;
+    }
+    nav li {
+        margin-right: 50px;
+    }
+    #nav_links {
+        height: auto;
+        border: blueviolet 1px solid;
+    }
+
+    /* Main */
+    main {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pop {
+        width: 30%;
+        order: 2;
+    }
+
+    #hbgmt {
+        width: 70%;
+        order: 1;
+    }
+
+    #hbgmt_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+
+    #actv {
+        order: 3;
+    }
+
+    /* Hébergements par ville */
+    .hbgmt_card_ctn_out {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hbgmt_card_ctn_in {
+        width: 96%;
+        height: 96%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .hbgmt_card_img {
+        width: 100%;
+        height: 140px;
+        
+    }
+
+    /* Hébergements populaires */
+    .pop_card_ctn_out {
+        width: 300px;
+    }
+
+    .pop_card_ctn_in {
+        width: 180px;
+    }
+
+    .pop_card_img {
+        width: 40%;
+    }
 }
