@@ -426,12 +426,13 @@ h2 {
 /* Footer */
 footer {
     width: 100vw;
-    height: 50vh;
+    height: fit-content;
+    height: -moz-fit-content;
     display: flex;
     background-color: #F2F2F2;
 }
 
-nav {
+footer nav {
     margin: auto;
     margin-left: 30px;
 }
@@ -480,14 +481,37 @@ footer li {
         margin: 0;
         border: red 2px solid;
     }
+
     nav li {
         margin-right: 50px;
     }
+
     #nav_links {
         height: auto;
         border: blueviolet 1px solid;
     }
 
+    /* Changement du formulaire de recherche */
+    #form {
+        margin-left: 0;
+    }
+
+    #sub_btn {
+        width: fit-content;
+        width: -moz-fit-content;
+        border-radius: 0 10px 10px 0;
+    }
+
+    #sub_btn img {
+        display: none;
+    }
+
+    #sub_btn span {
+        display: inline;
+        color: white;
+        font-weight: 600;
+        margin: 0 10px 0 10px;
+    }
     /* Main */
     main {
         max-width: 100%;
