@@ -238,17 +238,18 @@ h2 {
     display: flex;
     border: #9c9c9c 1px solid;
     border-radius: 50%;
-    align-self: center;
+    /* align-self: center; */
 }
 
 #info_div {
     display: flex;
     margin-bottom: 50px;
+    border: chartreuse 2px solid;
 }
 
 #info_div p {
     width: fit-content;
-    margin-bottom: 0;
+    margin-top: 0;
     margin-left: 5px;
 }
 
@@ -326,7 +327,6 @@ h2 {
 
 .cards_title {
     font-size: 1.1em;
-    width: 70%;
     border: blue 1px solid;
     margin: 0;
 }
@@ -334,9 +334,12 @@ h2 {
 .cards_desc {
     font-size: 0.9em;
     font-weight: 500;
-    width: 70%;
     border: blueviolet 1px solid;
     margin: 0;
+}
+
+.pop_desc_ctn h3, .pop_desc_ctn p {
+    width: 70%;
 }
 
 .stars {
@@ -419,6 +422,34 @@ h2 {
     border-radius: 4vw 4vw 0 0;
     object-fit: cover;
 }
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+nav {
+    margin: auto;
+    margin-left: 30px;
+}
+
+footer ul {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+.foot_links {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
 
 /* Media queries pour pc */
 @media screen and (min-width: 1024px) {
@@ -515,5 +546,16 @@ h2 {
 
     .pop_card_img {
         width: 40%;
+    }
+
+    /* Footer */
+    footer {
+        height: 200px;
+    }
+
+    footer nav {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
     }
 }
