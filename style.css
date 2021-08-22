@@ -11,6 +11,7 @@ body {
     font-family: 'raleway', monospace;
     font-size: 18px;
     width: 100vw;
+    max-width: 100vw;
     margin: auto;
     background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4vw;
 }
@@ -346,10 +347,6 @@ h2 {
     display: flex;
     border: chartreuse 2px solid;
 }
-/* .star {
-    width: 15px;
-    height: 15px;
-} */
 
 /* Hébergements */
 .hbgmt_card_ctn_out {
@@ -435,6 +432,7 @@ footer {
 footer nav {
     margin: auto;
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 footer ul {
@@ -482,7 +480,7 @@ footer li {
         border: red 2px solid;
     }
 
-    nav li {
+    header li {
         margin-right: 50px;
     }
 
@@ -514,18 +512,19 @@ footer li {
     }
     /* Main */
     main {
-        max-width: 100%;
+        max-width: 100vw;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     #pop {
-        width: 30%;
+        width: 25%;
         order: 2;
     }
 
     #hbgmt {
-        width: 70%;
+        width: 60%;
         order: 1;
     }
 
@@ -572,6 +571,71 @@ footer li {
         width: 40%;
     }
 
+    /* Activités grid */
+    .actv1 {
+        grid-area: actv1;
+        border: 2px solid blue;
+    }
+
+    .actv2 {
+        grid-area: actv2;
+        border: 2px solid red;
+    }
+
+    .actv3 {
+        grid-area: actv3;
+        border: 2px solid green;
+    }
+
+    .actv4 {
+        grid-area: actv4;
+        border: 2px solid orange;
+    }
+
+    .actv5 {
+        grid-area: actv5;
+        border: 2px solid black;
+    }
+
+    .actv6 {
+        grid-area: actv6;
+        border: 2px solid purple;
+    }
+
+    #actv {
+        background-color: #F2F2F2;
+        width: 90%;
+        /* height: 50vh; */
+    }
+    #actv_cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "acvt1 actv2 actv4 actv5"
+                             "actv1 actv2 actv4 actv5"
+                             "actv1 actv2 actv4 actv5"
+                             "actv1 actv2 actv4 actv6"
+                             "actv1 actv3 actv4 actv6"
+                             "actv1 actv3 actv4 actv6";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .actv_card_ctn_out {
+        width: auto;
+        height: 100%;
+    }
+
+    .actv_card_ctn_in {
+        height: 95%;
+    }
+
+    .actv_card_img {
+        max-width: 100%;
+        height: 100%;
+    }
     /* Footer */
     footer {
         height: 200px;
