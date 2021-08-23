@@ -261,7 +261,6 @@ h2 {
 /* Catégorie populaires */
 #pop {
     background-color: #F2F2F2;
-    height: 80vh;
     border: #F2F2F2 1px solid;
 }
 /* Titre */
@@ -300,7 +299,7 @@ h2 {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    border: red 2px solid;
+    /* border: red 2px solid; */
 }
 
 .pop_card_ctn_in {
@@ -308,7 +307,7 @@ h2 {
     height: 18.5vh;
     margin: auto;
     display: flex;
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
 }
 
 .pop_desc_ctn {
@@ -320,7 +319,7 @@ h2 {
     /* justify-content: center; */
     /* align-content: center; */
     align-items: center;
-    border: green solid 2px;
+    /* border: green solid 2px; */
 }
 
 .pop_card_img {
@@ -334,29 +333,34 @@ h2 {
 
 .cards_title {
     font-size: 1.1em;
-    border: orange 2px solid;
+    /* border: orange 2px solid; */
     margin: 0;
 }
 
 .cards_desc {
     font-size: 0.8em;
     font-weight: 500;
-    border: blueviolet 2px solid;
+    /* border: blueviolet 2px solid; */
     margin: 0;
 }
 
+.pop_desc_ctn h3 {
+    margin-top: 10px;
+}
 .pop_desc_ctn h3, .pop_desc_ctn p, .stars {
-    width: 80%;
+    width: 90%;
+    margin-left: 30px;
 }
 
 .stars {
     display: flex;
     align-items: flex-end;
-    border: chartreuse 2px solid;
+    /* border: chartreuse 2px solid; */
 }
 
 .pop_stars_ctn {
     flex-grow: 1;
+    margin-bottom: 10px;
 }
 
 /* Hébergements */
@@ -388,7 +392,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: green solid 2px;
+    /* border: green solid 2px; */
 }
 
 .hbgmt_desc_ctn h3, .hbgmt_desc_ctn p, .hbgmt_desc_ctn div {
@@ -486,7 +490,7 @@ footer li {
 }
 
 /* Media queries pour pc */
-@media screen and (min-width: 1024px) {
+@media screen and (min-device-width: 1024px) {
     /* Règles générales */
     body {
         width: 100%;
@@ -573,58 +577,66 @@ footer li {
     }
 
     #pop {
-        width: 30%;
+        width: 25%;
         order: 2;
     }
 
     #hbgmt {
-        width: 65%;
+        width: 70%;
         /* height: 85vh; */
         background-color: #F2F2F2;
         border-radius: 10px;
-        border: 2px solid red;
+        /* border: 2px solid red; */
+        /* display: flex;
+        flex-direction: column; */
         order: 1;
     }
 
     #hbgmt_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-around;
-        align-items: center;
+        margin: auto;
+        /* border: lawngreen 2px solid; */
+        /* justify-content: space-evenly; */
+        /* align-content: space-around; */
+        /* align-items: center; */
     }
 
     #actv {
         order: 3;
     }
 
+    /* Descriptions */
+    .cards_title {
+        font-size: 0.8em;
+    }
     /* Hébergements par ville */
     .hbgmt_card_ctn_out {
-        width: 25%;
+        width: 31%;
         height: fit-content;
-        height: -moz-fit-content;
-        margin: 10px 10px 10px 0;
+        /* margin: 10px 10px 10px 0; */
         border-radius: 8%;
     }
 
     .hbgmt_card_ctn_in {
         width: 94%;
-        /* height: 94%; */
-        justify-content: center;
+        height: 94%;
         align-items: center;
     }
 
     .hbgmt_card_img {
+        display: block;
         width: 100%;    
-        max-height: 80px;
+        max-height: 60%;
         /* margin: auto; */
-        border: 2px solid blue;
-        border-radius: 8% 8% 0 0;
+        margin-top: 8px;
+        /* border: 2px solid blue; */
+        border-radius: 15px 15px 0 0;
     }
 
     .hbgmt_desc_ctn {
-        max-height: 200px;
-        border: 2px solid green;
+        max-height: 40%;
+        /* border: 2px solid green; */
     }
 
 
