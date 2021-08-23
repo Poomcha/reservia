@@ -300,7 +300,7 @@ h2 {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    /* border: red 2px solid; */
+    border: red 2px solid;
 }
 
 .pop_card_ctn_in {
@@ -308,17 +308,19 @@ h2 {
     height: 18.5vh;
     margin: auto;
     display: flex;
-    /* border: solid blue 2px; */
+    border: solid blue 2px;
 }
 
 .pop_desc_ctn {
-    width: 60vw;
-    height: 19vh;
+    width: 50vw;
+    height: 18.5vh;
     margin: auto;
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    /* border: green solid 2px; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+    border: green solid 2px;
 }
 
 .pop_card_img {
@@ -332,30 +334,36 @@ h2 {
 
 .cards_title {
     font-size: 1.1em;
-    /* border: blue 1px solid; */
+    border: orange 2px solid;
     margin: 0;
 }
 
 .cards_desc {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 500;
-    /* border: blueviolet 1px solid; */
+    border: blueviolet 2px solid;
     margin: 0;
 }
 
-.pop_desc_ctn h3, .pop_desc_ctn p {
-    width: 70%;
+.pop_desc_ctn h3, .pop_desc_ctn p, .stars {
+    width: 80%;
 }
 
 .stars {
     display: flex;
-    /* border: chartreuse 2px solid; */
+    align-items: flex-end;
+    border: chartreuse 2px solid;
+}
+
+.pop_stars_ctn {
+    flex-grow: 1;
 }
 
 /* Hébergements */
 .hbgmt_card_ctn_out {
     width: 90vw;
     height: 30vh;
+    height: fit-content;
     margin: auto;
     box-shadow: black 2px 2px 10px;
     border-radius: 4vw;
@@ -376,14 +384,22 @@ h2 {
 
 .hbgmt_desc_ctn {
     width: 100%;
-    height: 10vh;
-    /* border: green solid 2px; */
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: green solid 2px;
+}
+
+.hbgmt_desc_ctn h3, .hbgmt_desc_ctn p, .hbgmt_desc_ctn div {
+    width: 90%;
+    margin-left: 10px;
 }
 
 .hbgmt_card_img {
     /* display: block; */
     width: 90vw;
-    height: 20vh;
+    height: 18vh;
     border-radius: 4vw 4vw 0 0;
     object-fit: cover;
 }
@@ -391,35 +407,39 @@ h2 {
 /* Activités */
 .actv_card_ctn_out {
     width: 90vw;
-    height: 30vh;
+    height: 20vh;
     margin: auto;
     box-shadow: black 2px 2px 10px;
     border-radius: 4vw;
     margin-bottom: 10px;
     /* display: flex; */
     /* align-items: center; */
-    /* border: red 2px solid; */
+    border: red 2px solid;
 }
 
 .actv_card_ctn_in {
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* border: solid blue 2px; */
+    border: solid blue 2px;
 }
 
 .actv_desc_ctn {
     width: 100%;
-    height: 6vh;
-    /* border: green solid 2px; */
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    border: green solid 2px;
 }
-
+ .actv_desc_ctn h3 {
+     margin-left: 10px;
+ }
 .actv_card_img {
     /* display: block; */
     width: 90vw;
-    height: 24vh;
+    height: 13vh;
     border-radius: 4vw 4vw 0 0;
     object-fit: cover;
 }
@@ -453,6 +473,17 @@ footer li {
     font-weight: normal;
 }
 
+/* Media queries pour petits écrans */
+@media screen and (max-device-width: 426px) and (max-device-height: 640px) {
+    .icon {
+        width: 12px;
+        height: 12px;
+    }
+    .cards_title {
+        font-size: 14px;
+    }
+
+}
 
 /* Media queries pour pc */
 @media screen and (min-width: 1024px) {
@@ -542,12 +573,16 @@ footer li {
     }
 
     #pop {
-        width: 25%;
+        width: 30%;
         order: 2;
     }
 
     #hbgmt {
-        width: 60%;
+        width: 65%;
+        /* height: 85vh; */
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        border: 2px solid red;
         order: 1;
     }
 
@@ -556,6 +591,7 @@ footer li {
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: space-around;
+        align-items: center;
     }
 
     #actv {
@@ -564,22 +600,34 @@ footer li {
 
     /* Hébergements par ville */
     .hbgmt_card_ctn_out {
-        width: 200px;
-        height: 200px;
+        width: 25%;
+        height: fit-content;
+        height: -moz-fit-content;
+        margin: 10px 10px 10px 0;
+        border-radius: 8%;
     }
 
     .hbgmt_card_ctn_in {
-        width: 96%;
-        height: 96%;
+        width: 94%;
+        /* height: 94%; */
         justify-content: center;
-        align-content: center;
+        align-items: center;
     }
 
     .hbgmt_card_img {
-        width: 100%;
-        height: 140px;
-        
+        width: 100%;    
+        max-height: 80px;
+        /* margin: auto; */
+        border: 2px solid blue;
+        border-radius: 8% 8% 0 0;
     }
+
+    .hbgmt_desc_ctn {
+        max-height: 200px;
+        border: 2px solid green;
+    }
+
+
 
     /* Hébergements populaires */
     .pop_card_ctn_out {
