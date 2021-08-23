@@ -30,7 +30,7 @@ header {
     right: 5vw;
 }
 
-nav {
+header nav {
     /* border: green 1px solid; */
     margin-top: 60px;
 }
@@ -76,7 +76,7 @@ li {
     border-bottom: 2px solid #F2F2F2;
 }
 
-#hbgmt_link a{
+#hbgmt_link a {
     color: #0065FC;
     font-weight: 600;
     margin: auto;
@@ -178,7 +178,6 @@ h2 {
     height: -moz-fit-content;
     display: flex;
     flex-flow: row wrap;
-    align-items: space-between;
     padding: 0;
 }
 
@@ -198,6 +197,11 @@ h2 {
     border: solid #9c9c9c;
     border-width: 1.5px 1.5px 1.5px 0;
     border-radius: 50px;
+}
+
+.filter a:hover {
+    background: #DEEBFF;
+    border-color: #DEEBFF;
 }
 
 .img_conteneur {
@@ -245,7 +249,7 @@ h2 {
 #info_div {
     display: flex;
     margin-bottom: 50px;
-    border: chartreuse 2px solid;
+    /* border: chartreuse 2px solid; */
 }
 
 #info_div p {
@@ -314,7 +318,7 @@ h2 {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    border: green solid 2px;
+    /* border: green solid 2px; */
 }
 
 .pop_card_img {
@@ -328,14 +332,14 @@ h2 {
 
 .cards_title {
     font-size: 1.1em;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
     margin: 0;
 }
 
 .cards_desc {
     font-size: 0.9em;
     font-weight: 500;
-    border: blueviolet 1px solid;
+    /* border: blueviolet 1px solid; */
     margin: 0;
 }
 
@@ -345,7 +349,7 @@ h2 {
 
 .stars {
     display: flex;
-    border: chartreuse 2px solid;
+    /* border: chartreuse 2px solid; */
 }
 
 /* Hébergements */
@@ -455,7 +459,7 @@ footer li {
     /* Règles générales */
     body {
         width: 100%;
-        background: url('images/logo/Reservia@3x.png') no-repeat left 50px top 35px / 100px;
+        background: url('images/logo/Reservia@3x.png') no-repeat left 50px top 20px / 100px;
     }
     /* Header */
     #signin {
@@ -464,7 +468,8 @@ footer li {
         margin: 0;
         padding: 0;
         display: flex;
-        border: green 1px solid;
+        width: 150px;
+        /* border: green 1px solid; */
     }
 
     #signin li {
@@ -474,19 +479,37 @@ footer li {
     header nav {
         display: flex;
         flex-direction: row-reverse;
-        width: 100%;
-        height: 100px;
+        /* width: 100%; */
+        height: 80px;
         margin: 0;
-        border: red 2px solid;
-    }
-
-    header li {
-        margin-right: 50px;
+        /* border: red 2px solid; */
     }
 
     #nav_links {
-        height: auto;
-        border: blueviolet 1px solid;
+        height: auto; 
+        /* border: blueviolet 1px solid; */
+    }
+
+    #hbgmt_link, #actv_link {
+        border: none;
+        /* border: 1px solid green; */
+    }
+
+    #hbgmt_link a, #actv_link a {
+        height: 100%;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid pink; */
+        color: black;
+        font-weight: 500;
+    }
+
+    #hbgmt_link a:hover, #actv_link a:hover {
+        color: #0065FC;
+        font-weight: 600;
+        border-top: #0065FC 2px solid;
     }
 
     /* Changement du formulaire de recherche */
@@ -574,36 +597,36 @@ footer li {
     /* Activités grid */
     .actv1 {
         grid-area: actv1;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
 
     .actv2 {
         grid-area: actv2;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 
     .actv3 {
         grid-area: actv3;
-        border: 2px solid green;
+        /* border: 2px solid green; */
     }
 
     .actv4 {
         grid-area: actv4;
-        border: 2px solid orange;
+        /* border: 2px solid orange; */
     }
 
     .actv5 {
         grid-area: actv5;
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
 
     .actv6 {
         grid-area: actv6;
-        border: 2px solid purple;
+        /* border: 2px solid purple; */
     }
 
     #actv {
-        background-color: #F2F2F2;
+        /* background-color: #F2F2F2; */
         width: 90%;
         /* height: 50vh; */
     }
@@ -638,12 +661,18 @@ footer li {
     }
     /* Footer */
     footer {
+        width: 100%;
         height: 200px;
     }
 
     footer nav {
-        width: 70vw;
+        width: 70%;
         display: flex;
         justify-content: space-between;
     }
+
+    .footer_link_ctn {
+        height: 170px;
+    }
+
 }
