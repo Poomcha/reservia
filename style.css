@@ -539,7 +539,7 @@ footer li {
     .pop_card_ctn_in {
         height: 110px;
         width: 83vw;
-        margin-left: ;
+        /* margin-left: ; */
     }
 
     .pop_desc_ctn {
@@ -553,6 +553,52 @@ footer li {
 
     .cards_title {
         font-size: 1em;
+    }
+
+    /* Hébergements */
+    .hbgmt_card_ctn_out {
+        height: 50vh;
+    }
+
+    .hbgmt_card_ctn_in {
+        height: 50vh;
+    }
+
+    .hbgmt_card_img {
+        height: 35vh;
+    }
+
+    .hbgmt_desc_ctn {
+        height: 15vh;
+    }
+
+    /* Activités */
+    .actv_card_ctn_out {
+        height: 50vh;
+    }
+
+    .actv_card_ctn_in {
+        height: 50vh;
+    }
+
+    .actv_img_ctn {
+        height: 35vh;
+    }
+
+    .actv_img_ctn figure {
+        height: 50vh;
+    }
+
+    .actv_card_img {
+        height: 40vh;
+    }
+
+    /* footer */
+    footer nav {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
     }
 
 
@@ -883,10 +929,6 @@ footer li {
         margin: 0;
         border-radius: 15px 15px 0 0;
         /* object-fit: contain; */
-    }
-
-    .actv_desc_ctn {
-        /* min-height: 40px; */
     }
 
     /* Footer */
