@@ -11,9 +11,10 @@ body {
     font-family: 'raleway', monospace;
     font-size: 18px;
     /* width: 100vw; */
-    max-width: 100vw;
+    /* width: 100%; */
+    max-width: 100%;
     margin: auto;
-    background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4vw;
+    background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4%;
 }
 
 /* Header */
@@ -27,7 +28,7 @@ header {
 #signin {
     position: absolute;
     top : -55px;
-    right: 5vw;
+    right: 5%;
 }
 
 header nav {
@@ -291,10 +292,10 @@ h2 {
 /* Cartes */
 /* Populaires */
 .pop_card_ctn_out {
-    width: 85vw;
+    width: 85%;
     height: 25vh;
     box-shadow: rgb(199, 199, 199) 2px 2px 5px;    background: white;
-    border-radius: 4vw;
+    border-radius: 15px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -323,9 +324,9 @@ h2 {
 
 .pop_card_img {
     /* display: block; */
-    width: 32vw;
+    width: 32%;
     height: auto;
-    border-radius: 3vw 0 0 3vw;
+    border-radius: 12px 0 0 12px;
     object-fit: cover;
 }
 
@@ -364,7 +365,7 @@ h2 {
 
 /* Hébergements */
 .hbgmt_card_ctn_out {
-    width: 90vw;
+    width: 90%;
     height: 30vh;
     height: fit-content;
     margin: auto;
@@ -401,19 +402,19 @@ h2 {
 
 .hbgmt_card_img {
     /* display: block; */
-    width: 90vw;
+    width: 90%;
     height: 18vh;
-    border-radius: 4vw 4vw 0 0;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 /* Activités */
 .actv_card_ctn_out {
-    width: 90vw;
+    width: 90%;
     height: 20vh;
     margin: auto;
     box-shadow: rgb(199, 199, 199) 2px 2px 5px;
-    border-radius: 4vw;
+    border-radius: 15px;
     margin-bottom: 10px;
     /* display: flex; */
     /* align-items: center; */
@@ -463,15 +464,15 @@ h2 {
 
 .actv_card_img {
     /* display: block; */
-    width: 90vw;
+    width: 90%;
     height: 14vh;
-    border-radius: 4vw 4vw 0 0;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 /* Footer */
 footer {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     height: -moz-fit-content;
     display: flex;
@@ -538,7 +539,7 @@ footer li {
 
     .pop_card_ctn_in {
         height: 110px;
-        width: 83vw;
+        width: 83%;
         /* margin-left: ; */
     }
 
@@ -685,7 +686,7 @@ footer li {
     }
     /* Main */
     main {
-        max-width: 100vw;
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
