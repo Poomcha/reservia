@@ -387,7 +387,7 @@ h2 {
     height: fit-content;
     min-height: 130px;
     margin: auto;
-    box-shadow: rgb(199, 199, 199) 2px 2px 5px;
+    box-shadow: rgb(199, 199, 199) 2px 2px 15px;
     border-radius: 15px;
     border: white solid 4px;
     margin-bottom: 10px;
@@ -426,7 +426,7 @@ h2 {
     width: 100%;
     height: 16vh;
     min-height: 80px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 12px 12px 0 0;
     object-fit: cover;
 }
 
@@ -567,24 +567,18 @@ footer li {
 
     /* Catégorie Populaire */
     .pop_card_ctn_out {
-        height: 120px;
         border-radius: 10px;
-        justify-content: center;
-    }
-
-    .pop_card_ctn_in {
-        height: 110px;
-        width: 83%;
-        /* margin-left: ; */
     }
 
     .pop_desc_ctn {
         max-height: 110px;
+        margin: 0;
     }
 
     .pop_card_img {
         border-radius: 7px 0 0 7px;
-        margin-left: -4px;
+        /* width: 40%; */
+        /* margin-left: -4px; */
     }
 
     .cards_title {
