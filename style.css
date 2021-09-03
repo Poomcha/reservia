@@ -271,7 +271,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 #pop_title img {
@@ -281,20 +281,25 @@ h2 {
 
 /* Section populaire */
 #pop_cards {
-    height: fit-content;
-    height: -moz-fit-content;
+    height: 70vh;
+    min-height: 350px;
+    /* min-height: -moz-fit-content; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    padding-bottom: 30px;
 }
 
 /* Cartes */
 /* Populaires */
 .pop_card_ctn_out {
     width: 85%;
-    height: 25vh;
-    box-shadow: rgb(199, 199, 199) 2px 2px 5px;    background: white;
+    height: 20vh;
+    min-height: 85px;
+    box-shadow: rgb(199, 199, 199) 2px 2px 5px;
+    background: white;
+    border: white solid 5px;
     border-radius: 15px;
     margin-bottom: 10px;
     display: flex;
@@ -303,8 +308,9 @@ h2 {
 }
 
 .pop_card_ctn_in {
-    width: 97%;
-    height: 23.5vh;
+    width: 100%;
+    height: 20vh;
+    min-height: 85px;
     margin: auto;
     display: flex;
     /* border: solid blue 2px; */
@@ -312,7 +318,8 @@ h2 {
 
 .pop_desc_ctn {
     width: 60%;
-    height: 23.5vh;
+    height: 20vh;
+    min-height: 85px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -324,7 +331,7 @@ h2 {
 
 .pop_card_img {
     /* display: block; */
-    width: 32%;
+    width: 140px;
     height: auto;
     border-radius: 12px 0 0 12px;
     object-fit: cover;
@@ -332,7 +339,7 @@ h2 {
 
 
 .cards_title {
-    font-size: 1.1em;
+    font-size: 0.9em;
     /* border: orange 2px solid; */
     margin: 0;
 }
@@ -364,13 +371,25 @@ h2 {
 }
 
 /* Hébergements */
+.section_title {
+    width: 92%;
+    margin: 30px auto 30px auto;
+}
+
+#afficher_plus {
+    width: 92%;
+    margin: 30px auto 60px auto;
+}
+
 .hbgmt_card_ctn_out {
     width: 90%;
-    height: 30vh;
+    height: 25vh;
     height: fit-content;
+    min-height: 130px;
     margin: auto;
     box-shadow: rgb(199, 199, 199) 2px 2px 5px;
-    border-radius: 16px;
+    border-radius: 15px;
+    border: white solid 4px;
     margin-bottom: 10px;
     /* display: flex; */
     /* align-items: center; */
@@ -379,7 +398,8 @@ h2 {
 
 .hbgmt_card_ctn_in {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
+    min-height: 130px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -388,7 +408,8 @@ h2 {
 
 .hbgmt_desc_ctn {
     width: 100%;
-    height: 12vh;
+    height: 9vh;
+    min-height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -402,20 +423,25 @@ h2 {
 
 .hbgmt_card_img {
     /* display: block; */
-    width: 90%;
-    height: 18vh;
+    width: 100%;
+    height: 16vh;
+    min-height: 80px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 /* Activités */
+#actv {
+    margin-bottom: 60px;
+}
 .actv_card_ctn_out {
     width: 90%;
-    height: 20vh;
+    height: 25vh;
+    min-height: 130px;
     margin: auto;
     box-shadow: rgb(199, 199, 199) 2px 2px 5px;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     /* display: flex; */
     /* align-items: center; */
     /* border: red 2px solid; */
@@ -423,23 +449,14 @@ h2 {
 
 .actv_card_ctn_in {
     width: 100%;
-    height: 20vh;
+    height: 25vh;
+    min-height: 130px;
     margin: auto;
     display: flex;
     flex-direction: column;
     /* border: solid blue 2px; */
 }
 
-/* .actv_desc_ctn {
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    border: green solid 2px;
-}
- .actv_desc_ctn h3 {
-     margin-left: 10px;
- } */
 .actv_img_ctn {
     height: 100%;
 }
@@ -464,8 +481,9 @@ h2 {
 
 .actv_card_img {
     /* display: block; */
-    width: 90%;
-    height: 14vh;
+    width: 100%;
+    height: 18vh;
+    min-height: 90px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
@@ -500,21 +518,38 @@ footer li {
 }
 
 /* Media queries pour petits écrans */
-@media screen and (max-device-width: 426px) and (max-device-height: 640px) {
+@media screen and (max-height: 410px) {
+    .actv_img_ctn figure figcaption {
+        max-height: 30px;
+    }
+}
+@media screen and (max-width: 280px) {
+    #corps_header {
+        width: 96%;
+    }
+
+    #search_box {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
     .icon {
         width: 12px;
         height: 12px;
     }
+
+    .pop_card_img {
+        width: 100px;
+    }
+
     .cards_title {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
-
-
-    #form {
-        margin: auto -10px;
+    .cards_desc {
+        font-size: 0.7em;
     }
-
 }
 
 /* Media queries pour tablettes */
