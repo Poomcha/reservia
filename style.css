@@ -124,7 +124,7 @@ h2 {
 #map_mark{
     width: 5vh;
     min-width: 30px;
-    height: 5vh;
+    height: 5.2vh;
     min-height: 30px;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
@@ -156,7 +156,7 @@ h2 {
 #sub_btn {
     width: 5vh;
     min-width: 30px;
-    height: 5vh;
+    height: 5.2vh;
     min-height: 30px;
     background: #0065FC;
     border: none;
@@ -201,8 +201,9 @@ h2 {
 }
 
 .filter a:hover {
-    background: #DEEBFF;
-    border-color: #DEEBFF;
+    background: #DEEBFF border-box;
+    height: 5vh;
+    border: hidden;
 }
 
 .img_conteneur {
@@ -262,7 +263,6 @@ h2 {
 /* Catégorie populaires */
 #pop {
     background-color: #F2F2F2;
-    border: #F2F2F2 1px solid;
 }
 /* Titre */
 #pop_title {
@@ -271,7 +271,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    /* margin-top: 20px; */
 }
 
 #pop_title img {
@@ -467,7 +466,7 @@ h2 {
     margin-left: 10px;
     font-family: 'raleway', serif;
     font-size: 0.8em;
-    font-weight: 750;
+    font-weight: 700;
 }
 
 .actv_card_img {
