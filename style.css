@@ -10,8 +10,6 @@
 body {
     font-family: 'raleway', monospace;
     font-size: 18px;
-    /* width: 100vw; */
-    /* width: 100%; */
     max-width: 100%;
     margin: auto;
     background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4%;
@@ -19,8 +17,6 @@ body {
 
 /* Header */
 header {
-    height: fit-content;
-    height: -moz-fit-content;
     position: relative;
 }
 
@@ -111,17 +107,16 @@ h2 {
 /* Formulaire */
 #form {
     width: fit-content;
-    width: -moz-fit-content;
+    max-width: 250px;
+    /* width: -moz-fit-content; */
     margin: auto;
     height: 5vh;
+    min-height: 30px;
     display: flex;
     align-items: center;
-    /* background-color: #F2F2F2; */
-    border: 1px solid #F2F2F2;
-    border-radius: 10px;
-    /* margin: auto; */
 }
-#map_mark{
+
+#map_mark {
     width: 5vh;
     min-width: 30px;
     height: 5.2vh;
@@ -137,8 +132,11 @@ h2 {
 
 #search_city p{
     height: 5vh;
+    min-height: 30px;
     display: flex;
     align-items: center;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 10px;
 }
 
 #search_box {
@@ -176,7 +174,6 @@ h2 {
 /* Filtres */
 #filter_list {
     height: fit-content;
-    height: -moz-fit-content;
     display: flex;
     flex-flow: row wrap;
     padding: 0;
@@ -189,7 +186,6 @@ h2 {
 
 .filter a {
     width: fit-content;
-    width:-moz-fit-content;
     height: 4.6vh;
     min-height: 28px;
     display: flex;
@@ -295,13 +291,12 @@ h2 {
     height: 20vh;
     min-height: 85px;
     box-shadow: rgb(199, 199, 199) 2px 2px 5px;
-    background: white;
-    border: white solid 5px;
+    background-color: white;
+    border: rgb(254, 255, 255) solid 5px;
     border-radius: 15px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    /* border: red 2px solid; */
 }
 
 .pop_card_ctn_in {
@@ -310,7 +305,6 @@ h2 {
     min-height: 85px;
     margin: auto;
     display: flex;
-    /* border: solid blue 2px; */
 }
 
 .pop_desc_ctn {
@@ -384,7 +378,7 @@ h2 {
     margin: auto;
     box-shadow: rgb(199, 199, 199) 2px 2px 15px;
     border-radius: 15px;
-    border: white solid 4px;
+    border: rgb(254, 255, 255) solid 4px;
     margin-bottom: 10px;
     /* border: red 2px solid; */
 }
@@ -481,8 +475,6 @@ h2 {
 /* Footer */
 footer {
     width: 100%;
-    height: fit-content;
-    height: -moz-fit-content;
     display: flex;
     background-color: #F2F2F2;
 }
@@ -629,8 +621,6 @@ footer li {
         display: flex;
         justify-content: space-around;
     }
-
-
 }
 /* Media queries pour pc */
 @media screen and (min-width: 1024px) {
@@ -682,7 +672,7 @@ footer li {
         font-weight: 500;
     }
 
-    #hbgmt_link a:hover, #actv_link a:hover {
+    #hbgmt_link a {
         color: #0065FC;
         font-weight: 600;
         border-top: #0065FC 2px solid;
@@ -691,11 +681,12 @@ footer li {
     /* Changement du formulaire de recherche */
     #form {
         margin-left: 0;
+        max-width: 300px;
     }
 
     #sub_btn {
         width: fit-content;
-        width: -moz-fit-content;
+        min-width: 95px;
         border-radius: 0 10px 10px 0;
     }
 
