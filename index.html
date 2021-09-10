@@ -10,12 +10,9 @@
     </head>
 
     <body>
-        <!-- En-tête -->
+        <div class="ctn_page">
+            <!-- En-tête -->
         <header>
-            <!-- Titre principal -->
-            <!-- <img id="titre_page" src="images/logo/Reservia.svg" alt="Logo de Reservia"> -->
-            <!-- <h1 id="main_title">Reservia</h1> -->
-
             <!-- Liens de navigations sur la page -->
             <nav>
                 <ul id="signin">
@@ -36,7 +33,7 @@
                     <div id="map_mark" >
                         <img class="icon" src="images/icons/map-marker-alt-solid.svg" alt="Map Marker"/>
                     </div>
-                    <form action="traitement.php" method="post" id="search_city">
+                    <form id="search_city">
                         <p>
                             <input id="search_box" type="text" name="city" value="Marseille, France"/>
                             <button type="submit" id="sub_btn">
@@ -447,6 +444,8 @@
                 </div>
             </section>
         </main> 
+        </div>
+        
 
         <!-- Pied de page -->
         <footer>

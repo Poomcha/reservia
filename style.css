@@ -625,11 +625,20 @@ footer li {
 /* Media queries pour pc */
 @media screen and (min-width: 1024px) {
     /* Règles générales */
+
     body {
-        width: 100%;
-        background: url('images/logo/Reservia@3x.png') no-repeat left 50px top 20px / 100px;
+        max-width: 100%;
+        background: url('images/logo/Reservia@3x.png') no-repeat left 7.9% top 20px / 100px;
+    }
+
+    .ctn_page {
+        max-width: 85%;
+        margin: auto;
     }
     /* Header */
+    header {
+        max-width: 100%;
+    }
     #signin {
         position: static;
         margin: 0;
@@ -641,6 +650,7 @@ footer li {
 
     #signin li {
         margin: auto;
+        margin-right: 0;
     }
 
     header nav {
@@ -652,7 +662,8 @@ footer li {
     }
 
     #nav_links {
-        height: auto; 
+        height: auto;
+        margin-right: -5%;
         /* border: blueviolet 1px solid; */
     }
 
@@ -679,6 +690,9 @@ footer li {
     }
 
     /* Changement du formulaire de recherche */
+    #corps_header {
+        width: 100%;
+    }
     #form {
         margin-left: 0;
         max-width: 300px;
@@ -702,14 +716,14 @@ footer li {
     }
     /* Main */
     main {
-        max-width: 100%;
+        min-width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     #pop {
-        width: 30%;
+        width: 34%;
         order: 2;
         border-radius: 15px;
     }
@@ -731,7 +745,7 @@ footer li {
 
     #actv {
         margin-bottom: 0;
-        height: 450px;
+        height: 600px;
         order: 3;
     }
 
@@ -832,10 +846,11 @@ footer li {
     }
 
     #actv {
-        width: 90%;
+        width: 100%;
+        margin-bottom: 60px;
     }
     #actv_cards {
-        height: 70%;
+        height: 90%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -845,8 +860,8 @@ footer li {
                              "actv1 actv2 actv4 actv6"
                              "actv1 actv3 actv4 actv6"
                              "actv1 actv3 actv4 actv6";
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
     }
 
     .actv_card_ctn_out {
@@ -879,19 +894,19 @@ footer li {
     }
 
     .actv_img_xl {
-        max-height: 88%;
+        max-height: 92%;
     }
 
     .actv_img_l {
-        max-height: 81%;
+        max-height: 87%;
     }
 
     .actv_img_s {
-        max-height: 60%;
+        max-height: 72%;
     }
 
     .actv_img_m {
-        max-height: 75%;
+        max-height: 83%;
     }
 
     .actv_img_ctn figcaption {
