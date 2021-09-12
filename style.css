@@ -723,13 +723,13 @@ footer li {
     }
 
     #pop {
-        width: 34%;
+        width: 30%;
         order: 2;
         border-radius: 15px;
     }
 
     #hbgmt {
-        width: 65%;
+        width: 68%;
         background-color: #F2F2F2;
         border-radius: 15px;
         /* border: 2px solid red; */
@@ -747,6 +747,11 @@ footer li {
         margin-bottom: 0;
         height: 600px;
         order: 3;
+    }
+
+    #actv .section_title {
+        margin-left: 0;
+        margin-top: 60px;
     }
 
     /* Descriptions */
@@ -803,8 +808,8 @@ footer li {
     }
 
     .pop_card_img {
-        min-width: 40%;
-        max-width: 40%;
+        min-width: 120px;
+        max-width: 120px;
         height: 120px;
         border-radius: 11px 0 0 11px;
     }
@@ -847,7 +852,7 @@ footer li {
 
     #actv {
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 6%;
     }
     #actv_cards {
         height: 90%;
@@ -925,14 +930,16 @@ footer li {
     /* Footer */
     footer {
         width: 100%;
+        margin-top: 60px;
         height: 250px;
     }
 
     footer nav {
-        width: 70%;
-        margin-left: 65px;
+        width: 85%;
+        margin: auto;
+        margin-left: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .footer_link_ctn {
