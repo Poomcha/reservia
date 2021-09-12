@@ -934,12 +934,16 @@ footer li {
         height: 250px;
     }
 
-    footer nav {
+    .nav_ctn {
         width: 85%;
         margin: auto;
-        margin-left: 0;
+    }
+    footer nav {
+        width: 85%;
         display: flex;
-        justify-content: space-around;
+        margin: auto;
+        margin-left: 0;
+        justify-content: space-between;
     }
 
     .footer_link_ctn {
