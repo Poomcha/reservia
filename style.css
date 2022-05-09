@@ -15,6 +15,17 @@ body {
     background: url("images/logo/Reservia.svg") no-repeat top 1vh left 4%;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #0065FC;
+}
+
+
 /* Header */
 header {
     position: relative;
